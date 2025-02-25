@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmah Irsalina - Certifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5; /* Abu-abu muda */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #666;
+        }
+
+        /* Certification Section */
+        .certification-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 40px 0;
+            color: #333;
+        }
+
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .cert-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cert-image-container {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cert-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .cert-image-container:hover .cert-image {
+            transform: scale(1.05);
+        }
+
+        .cert-content {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cert-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+
+        .cert-title:hover {
+            color: #666;
+        }
+
+        .cert-issuer {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .certification-grid {
+                grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            }
+            
+            .cert-image-container {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .certification-grid {
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            }
+            
+            .cert-image-container {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .certification-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cert-image-container {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="certification.html">Certification</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="certification-title">Certifications</h1>
+
+        <div class="certification-grid">
+            <!-- Row 1 -->
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat dicoding data science.jpg" alt="Data Science Basic Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://www.dicoding.com/certificates/KEXL1OV3YXG2" target="_blank" class="cert-title">Data Science Basic</a>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat dicoding python.jpg" alt="Python Programming Basic Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://www.dicoding.com/certificates/KEXL7GV9MXG2" target="_blank" class="cert-title">Python Programming Basic</a>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat dicoding dasar AI.jpg" alt="Artificial Intelligence Basic Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://www.dicoding.com/certificates/NVP7Q09VOZR0" target="_blank" class="cert-title">Artificial Intelligence (AI) Basic</a>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat dicoding visualisasi data.jpg" alt="Data Visualization Basic Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://www.dicoding.com/certificates/L4PQQQ004PO1" target="_blank" class="cert-title">Data Visualization Basic</a>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat dicoding Dasar Structured Query Language (SQL).jpg" alt="SQL Basic Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://www.dicoding.com/certificates/1OP8WG9RVXQK" target="_blank" class="cert-title">Structured Query Language (SQL) Basic</a>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat dicoding dasar manajemen proyek.jpg" alt="Project Management Basic Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://www.dicoding.com/certificates/JLX1748MJX72" target="_blank" class="cert-title">Project Management Basic</a>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat dicoding Dasar-Dasar DevOps.jpg" alt="DevOps Basics Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://www.dicoding.com/certificates/NVP7955EVZR0" target="_blank" class="cert-title">DevOps Basics</a>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat DQLab R Fundamental for data science.jpg" alt="R Fundamental for Data Science Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <a href="https://academy.dqlab.id/certificate/pdf/DQLABINTR1BRFAMA" target="_blank" class="cert-title">R Fundamental for Data Science</a>
+                    <p class="cert-issuer">DQLab Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat workshop IOT using arduino.jpg" alt="IoT Workshop Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-title">Workshop Introduction Internet of Things Using Arduino</span>
+                    <p class="cert-issuer">Himpunan Mahasiswa Informatika Universitas Nasional</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat workshop defending against cyber attacks.jpg" alt="Cyber Security Workshop Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-title">Workshop Defending Against Cyber Attacks: Analysis and Vulnerability Identification for Websites</span>
+                    <p class="cert-issuer">Himpunan Mahasiswa Informatika Universitas Nasional</p>
+                </div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat workshop creating news app with flutter.jpg" alt="Flutter Workshop Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-title">Workshop Creating News App with Flutter</span>
+                    <p class="cert-issuer">Himpunan Mahasiswa Informatika Universitas Nasional</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="sertifikat cordovacourse frontend development.jpg" alt="Frontend Development Certificate" class="cert-image">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-title">Frontend Development</span>
+                    <p class="cert-issuer">Cordovacouse Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
